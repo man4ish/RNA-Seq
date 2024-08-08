@@ -11,8 +11,8 @@ java -jar bin/womtool-59.jar inputs RnaSeq.wdl > input.json
 ## Running wdl locally on cromwell engine
 java -jar bin/cromwell-58.jar run RnaSeq.wdl --inputs input.json
 
-## RUN rnaseq app on dnanexus platform
-sh run_rnaseq.sh <folder name> 
+## RUN rnaseq (nextflow pipeline)
+sh run_rnaseq_nf.sh
 
 # Related Links 
 ### Reference for WDL docs: 
