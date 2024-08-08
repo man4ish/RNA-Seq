@@ -1,17 +1,38 @@
+#!/bin/bash
+
+# Define input parameters
+FASTQ1="/path/to/forward.fastq"
+FASTQ2="/path/to/reverse.fastq"
+ADAPTERS="/path/to/adapters.fasta"
+PREFIX="my_prefix"
+SKEWER_THREADS=4
+MINIMUM_READ_LENGTH=50
+KALLISTO_THREADS=8
+BOOTSTRAP_SAMPLES=100
+IDX="/path/to/kallisto/index"
+GTF="/path/to/annotations.gtf"
+STAR_THREADS=8
+REF_TAR="/path/to/reference.tar.gz"
+REF_FLAT="/path/to/ref_flat.txt"
+RIBOSOMAL_INTERVAL="/path/to/ribosomal_intervals.bed"
+REF_SEQ="/path/to/reference.fasta"
+
+# Run Nextflow pipeline with specified parameters
 nextflow run RNASeq.nf \
-    --fastq1 /path/to/forward.fastq \
-    --fastq2 /path/to/reverse.fastq \
-    --adapters /path/to/adapters.fasta \
-    --prefix my_prefix \
-    --skewer_threads 4 \
-    --minimum_read_length 50 \
-    --kallisto_threads 8 \
-    --bootstrap_samples 100 \
-    --idx /path/to/kallisto/index \
-    --gtf /path/to/annotations.gtf \
-    --STAR_threads 8 \
-    --ref_tar /path/to/reference.tar.gz \
-    --ref_flat /path/to/ref_flat.txt \
-    --ribosomal_interval /path/to/ribosomal_intervals.bed \
-    --ref_seq /path/to/reference.fasta
+    --fastq1 "$FASTQ1" \
+    --fastq2 "$FASTQ2" \
+    --adapters "$ADAPTERS" \
+    --prefix "$PREFIX" \
+    --skewer_threads "$SKEWER_THREADS" \
+    --minimum_read_length "$MINIMUM_READ_LENGTH" \
+    --kallisto_threads "$KALLISTO_THREADS" \
+    --bootstrap_samples "$BOOTSTRAP_SAMPLES" \
+    --idx "$IDX" \
+    --gtf "$GTF" \
+    --STAR_threads "$STAR_THREADS" \
+    --ref_tar "$REF_TAR" \
+    --ref_flat "$REF_FLAT" \
+    --ribosomal_interval "$RIBOSOMAL_INTERVAL" \
+    --ref_seq "$REF_SEQ"
+
 
