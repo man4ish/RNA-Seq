@@ -1,0 +1,17 @@
+{
+  "Rnaseq.adapters" : "/Users/mkumar1/Desktop/apps/rna_seq/test_data/adapters.fa",
+  "Rnaseq.prefix": "trimmed",
+  "Rnaseq.fastq2": "/Users/mkumar1/Desktop/apps/rna_seq/test_data/Set_R1_001_25000.fastq.gz",
+  "Rnaseq.fastq1": "/Users/mkumar1/Desktop/apps/rna_seq/test_data/Set_R1_001_25000.fastq.gz",
+  "Rnaseq.idx": "/Users/mkumar1/Desktop/apps/rna_seq/test_data/kallisto/gencode.v19.annotation.idx",
+  "Rnaseq.gtf": "/Users/mkumar1/Desktop/apps/rna_seq/test_data/kallisto/gencode.v19.annotation.gtf",
+  "Rnaseq.ref_tar": "/Users/mkumar1/Desktop/apps/rna_seq/test_data/GRCh38.tar.gz",
+  "Rnaseq.skewer_threads": 10,
+  "Rnaseq.minimum_read_length": 18,
+  "Rnaseq.kallisto_threads": 10,
+  "Rnaseq.bootstrap_samples": 100,
+  "Rnaseq.STAR_threads": 8,
+  "Rnaseq.ref_flat": "/Users/mkumar1/Desktop/apps/rna_seq/test_data/current.refflat to current.refflat",
+  "Rnaseq.ribosomal_interval": "/Users/mkumar1/Desktop/apps/rna_seq/test_data/GRCh38_no_alt_analysis_set.decoy.fna",
+  "Rnaseq.ref_seq": "/Users/mkumar1/Desktop/apps/rna_seq/test_data/GRCh38_no_alt_analysis_set.decoy.fna"
+}
