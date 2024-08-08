@@ -14,8 +14,9 @@ java -jar bin/cromwell-58.jar run RnaSeq.wdl --inputs input.json
 ## RUN rnaseq app on dnanexus platform
 sh run_rnaseq.sh <folder name> 
 
-# Related Links <br>
-### Reference for WDL docs: https://github.com/openwdl/wdl/blob/main/versions/1.0/SPEC.md
+# Related Links 
+### Reference for WDL docs: 
+### https://github.com/openwdl/wdl/blob/main/versions/1.0/SPEC.md
 ### https://dockstore.org/
 ### https://docs.docker.com/docker-hub/
 ### https://github.com/gatk-workflows/
